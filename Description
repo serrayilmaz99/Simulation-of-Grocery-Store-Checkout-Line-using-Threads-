@@ -1,0 +1,10 @@
+I wrote a multithreaded C++ program that simulates a queue of customers waiting in a store to pay their groceries. 
+There are two (2) cashiers and a queue in the store, shared by these cashiers. 
+One of the cashier always serves to the customers, while the other cashier serves when the current number of customers waiting in the queue passes a threshold value.  
+When arrived, customers need to go to the rear of the queue and wait in that queue until their turn comes to be served by a cashier. 
+Whenever a cashier is available, the customer at the front of the queue begins the checkout process with that cashier. 
+I simulated the customer's arrivals and their transactions with the cashiers via a dynamic queue data structure and multithreading techniques. 
+The time between arrivals of two customers is probabilistic. 
+Moreover, the time for a cashier to finish a checkout process is also probabilistic. 
+Thus, the inter-arrival time between two customers and the checkout durations of cashiers are random values. 
+The parameters of these random values are inputs. 
