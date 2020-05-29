@@ -1,0 +1,17 @@
+
+s= str(input("enter a word: "))
+i = 0
+j = len(s)-1
+
+check = True # initially assuming it's a palindrome
+while i < j:
+  if s[i] != s[j]:
+    check = False
+    break
+  i += 1
+  j -= 1
+    
+if check:
+  print("Yes")
+else:
+  print("No")
